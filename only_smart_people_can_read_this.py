@@ -43,7 +43,7 @@ def randomize_text(text: str, group_length: int) -> str:
                     k = j // group_length * group_length
                     if k != prev_k:
                         randomized = False
-                    prev_k = k
+                        prev_k = k
                     while True:
                         rand_i = random.randint(
                             k, min(length, k + group_length) - 1)
